@@ -8,7 +8,6 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const city = require('../public/js/weather/current_weather/city');
 require('dotenv').config();
-console.log(process.env);
 
 router.get('/', async (req, res, next) => {
     let isLogin = false, viewbag = {};
