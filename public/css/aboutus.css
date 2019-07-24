@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    height: 80vh;
+}
+
+.USC-logo {
+    width: auto;
+    height: 38vh;
+    padding: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.description {
+    margin-left: 25%;
+}
+
+.name {
+    height: 42vh;
+}
+
+/*余強生*/
+#USC1 {
+    animation: fill 0.5s ease forwards 6.1s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#USC1 path:nth-child(1) {
+    stroke-dasharray: 373.1497802734375;
+    stroke-dashoffset: 373.1497802734375;
+    animation: line-anim 2s ease forwards 1s;
+}
+#USC1 path:nth-child(2) {
+    stroke-dasharray: 483.89276123046875;
+    stroke-dashoffset: 483.89276123046875;
+    animation: line-anim 2s ease forwards 1.3s;
+}
+#USC1 path:nth-child(3) {
+    stroke-dasharray: 508.5516662597656;
+    stroke-dashoffset: 508.5516662597656;
+    animation: line-anim 2s ease forwards 1.6s;
+}
+#USC1 path:nth-child(4) {
+    stroke-dasharray: 534.5279541015625;
+    stroke-dashoffset: 534.5279541015625;
+    animation: line-anim 2s ease forwards 1.9s;
+}
+#USC1 path:nth-child(5) {
+    stroke-dasharray: 226.94400024414062;
+    stroke-dashoffset: 226.94400024414062;
+    animation: line-anim 2s ease forwards 2.2s;
+}
+#USC1 path:nth-child(6) {
+    stroke-dasharray: 490.2921447753906;
+    stroke-dashoffset: 490.2921447753906;
+    animation: line-anim 2s ease forwards 2.5s;
+}
+#USC1 path:nth-child(7) {
+    stroke-dasharray: 604.4818725585938;
+    stroke-dashoffset: 604.4818725585938;
+    animation: line-anim 2s ease forwards 2.8s;
+}
+#USC1 path:nth-child(8) {
+    stroke-dasharray: 635.7141723632812;
+    stroke-dashoffset: 635.7141723632812;
+    animation: line-anim 2s ease forwards 3.1s;
+}
+#USC1 path:nth-child(9) {
+    stroke-dasharray: 493.9142761230469;
+    stroke-dashoffset: 493.9142761230469;
+    animation: line-anim 2s ease forwards 3.4s;
+}
+#USC1 path:nth-child(10) {
+    stroke-dasharray: 534.5279541015625;
+    stroke-dashoffset: 534.5279541015625;
+    animation: line-anim 2s ease forwards 3.7s;
+}
+#USC1 path:nth-child(11) {
+    stroke-dasharray: 463.98406982421875;
+    stroke-dashoffset: 463.98406982421875;
+    animation: line-anim 2s ease forwards 4.0s;
+}
+#USC1 path:nth-child(12) {
+    stroke-dasharray: 604.482421875;
+    stroke-dashoffset: 604.482421875;
+    animation: line-anim 2s ease forwards 4.6s;
+}
+#USC1 path:nth-child(13) {
+    stroke-dasharray: 635;
+    stroke-dashoffset: 635;
+    animation: line-anim 2s ease forwards 4.6s;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: black;
+    }
+}
+
+/*陳俊元*/
+#USC {
+    animation: fill 0.5s ease forwards 6.1s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#USC path:nth-child(1) {
+    stroke-dasharray: 508;
+    stroke-dashoffset: 508;
+    animation: line-anim 2s ease forwards 1s;
+}
+#USC path:nth-child(2) {
+    stroke-dasharray: 534;
+    stroke-dashoffset: 534;
+    animation: line-anim 2s ease forwards 1.3s;
+}
+#USC path:nth-child(3) {
+    stroke-dasharray: 463;
+    stroke-dashoffset: 463;
+    animation: line-anim 2s ease forwards 1.6s;
+}
+#USC path:nth-child(4) {
+    stroke-dasharray: 604;
+    stroke-dashoffset: 604;
+    animation: line-anim 2s ease forwards 1.9s;
+}
+#USC path:nth-child(5) {
+    stroke-dasharray: 508;
+    stroke-dashoffset: 508;
+    animation: line-anim 2s ease forwards 2.2s;
+}
+#USC path:nth-child(6) {
+    stroke-dasharray: 534;
+    stroke-dashoffset: 534;
+    animation: line-anim 2s ease forwards 2.5s;
+}
+#USC path:nth-child(7) {
+    stroke-dasharray: 483;
+    stroke-dashoffset: 483;
+    animation: line-anim 2s ease forwards 2.8s;
+}
+#USC path:nth-child(8) {
+    stroke-dasharray: 604;
+    stroke-dashoffset: 604;
+    animation: line-anim 2s ease forwards 3.1s;
+}
+#USC path:nth-child(9) {
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: line-anim 2s ease forwards 3.4s;
+}
+#USC path:nth-child(10) {
+    stroke-dasharray: 483;
+    stroke-dashoffset: 483;
+    animation: line-anim 2s ease forwards 3.7s;
+}
+#USC path:nth-child(11) {
+    stroke-dasharray: 490;
+    stroke-dashoffset: 490;
+    animation: line-anim 2s ease forwards 4.0s;
+}
+#USC path:nth-child(12) {
+    stroke-dasharray: 604;
+    stroke-dashoffset: 604;
+    animation: line-anim 2s ease forwards 4.6s;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: black;
+    }
+}
+
+/*袁立緯*/
+#USC2 {
+    animation: fill 0.5s ease forwards 6.1s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#USC2 path:nth-child(1) {
+    stroke-dasharray: 373.1498718261719;
+    stroke-dashoffset: 373.1498718261719;
+    animation: line-anim 2s ease forwards 1s;
+}
+#USC2 path:nth-child(2) {
+    stroke-dasharray: 483.89288330078125;
+    stroke-dashoffset: 483.89288330078125;
+    animation: line-anim 2s ease forwards 1.3s;
+}
+#USC2 path:nth-child(3) {
+    stroke-dasharray: 490.2921142578125;
+    stroke-dashoffset: 490.2921142578125;
+    animation: line-anim 2s ease forwards 1.6s;
+}
+#USC2 path:nth-child(4) {
+    stroke-dasharray: 604.48291015625;
+    stroke-dashoffset: 604.48291015625;
+    animation: line-anim 2s ease forwards 1.9s;
+}
+#USC2 path:nth-child(5) {
+    stroke-dasharray: 297.2160339355469;
+    stroke-dashoffset: 297.2160339355469;
+    animation: line-anim 2s ease forwards 2.2s;
+}
+#USC2 path:nth-child(6) {
+    stroke-dasharray: 226.94400024414062;
+    stroke-dashoffset: 226.94400024414062;
+    animation: line-anim 2s ease forwards 2.5s;
+}
+#USC2 path:nth-child(7) {
+    stroke-dasharray: 801.1424560546875;
+    stroke-dashoffset: 801.1424560546875;
+    animation: line-anim 2s ease forwards 2.8s;
+}
+#USC2 path:nth-child(8) {
+    stroke-dasharray: 463.96795654296875;
+    stroke-dashoffset: 463.96795654296875;
+    animation: line-anim 2s ease forwards 3.1s;
+}
+#USC2 path:nth-child(9) {
+    stroke-dasharray: 226.94400024414062;
+    stroke-dashoffset: 226.94400024414062;
+    animation: line-anim 2s ease forwards 3.4s;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: black;
+    }
+}
+
+

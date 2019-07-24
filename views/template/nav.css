@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amiko', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.head {
+  height: 10vh;
+  width: 100vw;
+}
+
+.logo {
+  position: absolute;
+  top: -6%;
+  left: 45%;
+  margin: auto;
+}
+
+#mainnav {
+  position: absolute;
+  font-family: 'Roboto Condensed', sans-serif;
+  z-index: 1;
+}
+
+#mainnav .nav-li {
+  margin: 55px 0;
+  left: -550px;
+  position: relative;
+  display: none;
+}
+
+#mainnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.4em;
+}
+
+ul .nav-li {
+  list-style: none;
+  margin-top: -50px;
+}
+
+.hamb {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2.5em;
+  z-index: 1;
+}
+
+.hamb a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#bubble {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  background: rgba(0, 0, 0, .5);
+}
+
+.gap {
+  position: relative;
+  color: white;
+  margin-top: 0px;
+  width: 400px;
+  left: 100px;
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: none;
+  opacity: 0.5;
+}

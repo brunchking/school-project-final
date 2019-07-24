@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pure</title>
+
+    <!--bootstrap css CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--animate.css cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!--hover.css cdn-->
+    <link href="../css/hover.css/hover-min.css" rel="stylesheet" media="all">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!--googleFont-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko:700" rel="stylesheet">
+
+    <!--DON'T TOUCH!!! jquery, bootstrap,script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <!--DON'T TOUCH!!! jquery, bootstrap,script-->
+
+    <!--left side nav-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <!--MY CSS-->
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/pure.css">
+    <link rel="stylesheet" href="./../css/socialMediaSideBar.css">
+
+    <!--MapScript-->
+    <script src="js/TaiwanMap/mapdata.js"></script>
+    <script src="js/TaiwanMap/countrymap.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <!--animated nav-->
+    <div class="head bg-light">
+        <div class="logo">
+            <a href="/"><img class="log" src="./../photo/logo.png"></a>
+        </div>
+        <nav role='navigation' id="mainnav">
+            <ul class="gap">
+                <li class="nav-li hvr-underline-from-left"><a href="/">Home</a></li>
+                <li class="nav-li hvr-underline-from-left"><a href="/aboutus">About us</a></li>
+                <li class="nav-li hvr-underline-from-left"><a href="#?">News</a></li>
+                <li class="nav-li hvr-underline-from-left"><a href="
+                    /choose">Discover Taiwan</a></li>
+                <li class="nav-li hvr-underline-from-left"><a href="#?">Gallery</a></li>
+                <li class="nav-li hvr-underline-from-left"><a href="/contact">Contact</a></li>
+                <li class="nav-li hvr-underline-from-left"><a href="#?">Language</a></li>
+            </ul>
+        </nav>
+        <div class="hamb">
+            <a href="#" style="color: black"><i class="fa fa-bars"></i></a>
+        </div>
+        <canvas id="bubble"></canvas>
+        <div class="box">
+        </div>
+    </div>
+
+    <!--map-->
+    <div class="container">
+        <div class="TaiwanMap">
+            <div id="map"></div>
+        </div>
+    </div>
+    <!--paragraph-->
+    <div class="container">
+        <div class="card-group">
+            <div class="card">
+                <img src="../photo/a2.jpg" class="card-img-top img-fluid min-width:" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mountain Ali</h5>
+                    <p class="card-text">
+                        ❀ 2019 阿里山櫻花季<br>
+                        ❀阿里山花期：每年3月～4月初<br>
+
+                        ❀2019阿里山櫻花季花期預測：3/9～4/15左右<br>
+
+                        ❀賞櫻地點：阿里山全區.<br><br>
+
+                        交通方式:<br>
+
+                        ❀自行開車：<br>國道3號—中埔交流道下—省道台18線。<br>
+
+                        ❀大眾運輸：<br>
+
+                        －搭台鐵至嘉義站下—轉搭嘉義縣公車（往阿里山）在阿里山站下。<br>
+
+                        －搭台鐵至嘉義站下—轉搭阿里山森林鐵路在阿里山站下。<br>
+                    </p>
+                    <p class="card-text"><small class="text-muted">
+                            Reference website:<br>
+                            <a
+                                href="https://blog.kkday.com/36623/asia-taiwan-alishan-cherryblossom-hotelscombined">https://blog.kkday.com/36623/asia-taiwan-alishan-cherryblossom-hotelscombined</a></small>
+                    </p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234259.3479429074!2d120.65970253328886!3d23.449557379850518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ee75449af122b%3A0x91d9e9efcca8b4ec!2sAlishan+Township%2C+Chiayi+County%2C+605!5e0!3m2!1sen!2stw!4v1557838210574!5m2!1sen!2stw"
+                    width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!--social sidebar-->
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/?hl=zh-tw" class="instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    
+    <!--footer-->
+    <footer>
+        <div class="container-fluid foot">
+            <div class="row text-center d-flex justify-content-center">
+                <h1 class="col-12">
+                    <h3>
+                        <p>&copy; TaiwanTravelWeb.com</p>
+                    </h3>
+            </div>
+        </div>
+    </footer>
+
+    <!--myJavaScript-->
+    <!--nav-->
+    <script src="../js/navNoEffect.js"></script>
+    </script>
+
+</body>
+
+</html>

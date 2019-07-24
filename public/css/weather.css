@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+html, body {
+    margin-right: -10px;
+}
+header {
+    position: relative;
+    height: 90vh;
+    min-height: 25rem;
+    width: 100%;
+}
+
+header .overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+video {
+    overflow: scroll;
+    background-position: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* @media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('../Sunset-Couple.mp4') black no-repeat center center scroll;
+    }
+} */
+
+/* Start here */
+
+.container {
+    /* border: 5px solid white; */
+    padding-top: 50px;
+    max-width: 1250px;
+    margin-bottom: 45px;
+}
+
+.city-select {
+    width: 200px;
+}
+
+select {
+    margin-bottom: 25px;
+}
+
+.city-name {
+    padding-bottom: 30px;
+}
+
+.row {
+    /* border: 5px solid gray; */
+    min-height: 35vh;
+}
+
+.col-sm-12, .col-lg-6 {
+    /* border: 5px solid pink; */
+    color: white;
+}
+
+.box1-title, .box1-temp, .box2, .box3, .box4 {
+    /* border: 0.5px solid white; */
+    text-align: left;
+}
+
+.box3 {
+    border: 0.5px solid white;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 30px;
+}
+
+.box1 {
+    height: 85%;
+    width: 100%;
+    margin: auto;
+}
+
+.box1-temp-detail {
+    /* border: 0.5px solid white; */
+    display: flex;
+    align-items: center;
+}
+
+.box2 {
+    height: 100%;
+}
+
+.box3>* {
+    font-size: 18px;
+}
+
+/* Table setting */
+
+table {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.5px solid white;
+}
+
+table tr {
+    white-space: nowrap;
+}
+
+.table-1 {
+    overflow: auto;
+}
+
+.table-2 {
+    overflow: auto;
+}
+
+td, th {
+    font-size: 13px;
+}
+
+/* Table setting */
+
+.weather-icon {
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.box-temp-text .situation {
+    font-size: 25px;
+}
+
+.box1 {
+    margin-top: 30px;
+}
+
+.Box01 {
+    margin-bottom: 30px;
+}
+
+.Box03 {
+    margin-bottom: 50px;
+}
+
+.Box04 {
+    margin-bottom: 30px;
+}
+
+.Row2 {
+    margin-top: 10px;
+}

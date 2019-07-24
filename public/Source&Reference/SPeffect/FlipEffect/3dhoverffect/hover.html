@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>hover effect</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+
+	<style>
+		body {
+			background-image: url(/photo/bg2.jpg);
+			height: 100vh;
+			background-position: center;
+			background-size: cover;
+			font-family: 'Roboto Condensed', sans-serif;
+			overflow: hidden;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.wrapper {
+			width: 100%;
+		}
+
+		.cols {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.col {
+			cursor: pointer;		
+			width: 20vw;
+			height: 20vh;
+		}
+
+		.container {
+			transform-style: preserve-3d;
+			perspective: 1000px;
+		}
+
+		.front,
+		.back {
+			background-size: cover;
+			background-position: center;
+			transition: .7s;
+			text-align: center;
+
+			height: 20vh;
+			color: #fff;
+			font-size: 1rem;
+		}
+
+		.back {
+			background: #fff;
+			background: linear-gradient(45deg, #fd0d44 0%, #1463e2 100%);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+
+		/**/
+		/*after*/
+		/**/
+		.front:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+			display: block;
+			backface-visibility: hidden;
+		}
+
+		/**/
+		/*after*/
+		/**/
+		.front .inner p:after {
+			content: '';
+			width: 4rem;
+			height: 2px;
+			position: absolute;
+			background: #fff;
+			display: block;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			bottom: -.75rem;
+		}
+
+		.container:hover .front,
+		.container:hover .back {
+			transition: .7s;
+		}
+
+		.inner {
+			transform: translateY(-50%) translateZ(60px) scale(0.94);
+			top: 50%;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			padding: 2rem;
+			box-sizing: border-box;
+		}
+
+		.container .back {
+			transform: rotateY(180deg);
+			transform-style: preserve-3d;
+		}
+
+		.container .front {
+			transform: rotateY(0deg);
+			transform-style: preserve-3d;
+		}
+
+		.container:hover .back {
+			transform: rotateY(0deg);
+			transform-style: preserve-3d;
+		}
+
+		.container:hover .front {
+			transform: rotateY(-180deg);
+			transform-style: preserve-3d;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="cols">
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/a.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/b.jpg);">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/c.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/d.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/e.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/f.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/g.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/h.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/j.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/k.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/l.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+			
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/m.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/n.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/p.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/r.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/s.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/t.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/w.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/x.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/y.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(photo/z.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(004.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(004.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(004.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(004.jpg)">
+					</div>
+
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---->
+
+		</div>
+	</div>
+</body>
+
+</html>

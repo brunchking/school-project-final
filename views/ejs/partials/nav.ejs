@@ -1,0 +1,29 @@
+<div class="head bg-light">
+    <div class="logo">
+        <a href="/"><img class="log" src="/photo/logo.png"></a>
+    </div>
+    <nav role='navigation' id="mainnav">
+        <ul class="gap">
+            <li class="nav-li hvr-underline-from-left"><a href="/">Home</a></li>
+            <li class="nav-li hvr-underline-from-left"><a href="/aboutus">About us</a></li>
+            <li class="nav-li hvr-underline-from-left"><a href="/weather">Weather</a></li>
+            <li class="nav-li hvr-underline-from-left"><a href="/choose">Discover Taiwan</a></li>
+            <li class="nav-li hvr-underline-from-left"><a href="/community">Community</a></li>
+            <li class="nav-li hvr-underline-from-left"><a href="/contact">Contact</a></li>
+            <li class="nav-li hvr-underline-from-left"><a href="#?">Language</a></li>
+        </ul>
+    </nav>
+    <div class="hamb">
+        <a href="#" style="color: black"><i class="fa fa-bars"></i></a>
+    </div>
+    <canvas id="bubble"></canvas>
+    <div class="box">
+    </div>
+    <div class="icon">
+        <% if (isLogin === true) { %>
+        <a href="/users/logout"><img class="log-out-img" src="../photo/log_out.png" alt=""></a>
+        <% } %>
+        <a href="/users"><img class="log-in-img" src="../photo/log_in.png" alt=""></a>
+    </div>
+</div>
+

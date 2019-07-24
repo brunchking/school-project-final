@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+.head {
+  position: relative;
+  height: 10vh;
+  width: 100vw;
+  z-index: 100;
+}
+
+.logo {
+  position: absolute;
+  height: 200%;
+  top: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.log {
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.5%;
+}
+
+/*log-in-icon*/
+.log-in-img {
+  height: 4vh;
+}
+
+/*log-in-icon*/
+.log-out-img {
+  height: 4vh;
+}
+
+#mainnav {
+  position: absolute;
+  z-index: 1;
+}
+
+#mainnav .nav-li {
+  margin: 5vh 0;
+  left: -50px;
+  position: relative;
+  display: none;
+}
+
+#mainnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 4vh;
+}
+
+ul .nav-li {
+  list-style: none;
+  margin-top: -50px;
+}
+
+.hamb {
+  position: absolute;
+  top: 2.3vh;
+  left: 1.5vw;
+  font-size: 4vh;
+  z-index: 1;
+}
+
+.hamb a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.gap {
+  position: relative;
+  color: white;
+  margin-top: 0px;
+  left: 5vw;
+  top: 7vh;
+}
+
+#bubble {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  background: rgba(0, 0, 0, .5);
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: none;
+  opacity: 0.5;
+}
+
+/*sign-up-form*/
+.log-in-form {
+  border: 1px solid #dadce0;
+  border-radius: 1.5%;
+  width: 30%;
+  margin-top: auto;
+  padding: 1%;
+}
+
+.btnSubmit {
+  text-align: center;
+}
+
+
+/*foot*/
+
+html, body {
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.foot {
+  background-color: black;
+  background-image: url("../photo/45-degree-fabric-light.png");
+  color: #d5d5d5;
+  height: 8vh;
+  margin-top: auto;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+@media (max-width: 1400.98px) {
+  .log-in-form {
+    width: 75%;
+    max-width: 500px;
+    padding: 2%;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .log-in-form {
+    border-color: white;
+    width: 75%;
+    margin-top: auto;
+    padding: 2%;
+  }
+}

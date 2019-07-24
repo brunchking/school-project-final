@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Amiko', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sky {
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(100%);
+    z-index: -1;
+}
+
+.choose {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.flex {
+    width: 100%;
+}
+
+.platform {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.ghost-button-left {
+    margin: 45px;
+}
+
+.ghost-button-right {
+    margin: 45px;
+}
+
+.ghost-button-border-color-left, .ghost-button-border-color-right {
+    display: inline-block;
+    width: 200px;
+    padding: 2vh;
+    font-size: 30px;
+    color: #fff;
+    background: gray;
+    opacity: 0.9;
+    border: 5px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: border-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.ghost-button-border-color-left:hover, .ghost-button-border-color-left:active, .ghost-button-border-color-right:hover, .ghost-button-border-color-right:active {
+    color: #66d8ed;
+    border-color: #66d8ed;
+    transition: border-color 0.4s ease-in, color 0.4s ease-in;
+}
+
+.text {
+    color: white;
+    font-size: 6vh;
+}
+
+@media (max-width: 550px) {
+    .ghost-button-border-color-left {
+        width: 150px;
+    }
+    .ghost-button-border-color-right {
+        width: 150px;
+    }
+    .ghost-button-left {
+        margin: 10px;
+    }
+    
+    .ghost-button-right {
+        margin: 10px;
+    }
+}

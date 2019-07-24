@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+
+    <!--bootswatch-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/journal/bootstrap.min.css">
+    <!--bootswatch-->
+
+    <!--animate.css cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!--hover.css cdn-->
+    <link href="../css/hover.css/hover-min.css" rel="stylesheet" media="all">
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/3d84ff36a1.js"></script>
+    <!--font awesome-->
+
+    <!--googleFont-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko:700" rel="stylesheet">
+
+    <!--left side nav-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <!--MY CSS-->
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/socialMediaSideBar.css">
+    <% if (isLogin === true) { %>
+    <link rel="stylesheet" href="/css/profile.css">
+    <% } %>
+</head>
+
+
+<body>
+    <!--social sidebar-->
+    <% include partials/social-sidebar %>
+
+    <div class="page">
+        <!--animated nav-->
+        <%- include('partials/nav') %>
+
+        <!-- Login form -->
+        <% if (isLogin === false) { %>
+        <div class="row mt-auto">
+            <div class="col-md-4 m-auto">
+                <div class="card card-body">
+                    <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i> Login</h1>
+                    <% include ./partials/messages %>
+                    <form action="/users/login" method="POST">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="Enter Email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="form-control"
+                                placeholder="Enter Password" />
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                    <p class="lead mt-4">
+                        No Account? <a href="/users/register">Register</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <% } %>
+
+        <!-- Personal file -->
+        <% if (isLogin === true && typeof user !== 'undefined') { %>
+        <div class="profile">
+            <div class="table">
+                <div class="header">
+                    <div class="head-pad">
+                        <div class="head-txt">
+                            <b style="font-size:25px">Profile</b>
+                            <p>
+
+                                Your personal info, like your name and photo, that you use on Taiwan Travel Web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="photo-block">
+                    <a href="#" id="clickable">
+                        <div class="line">
+                            <div class="tag">
+                                PHOTO
+                            </div>
+                            <div class="data">
+                                photo
+                            </div>
+                            <div class="arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <hr>
+                <div class="block">
+                    <a href="#" id="clickable">
+                        <div class="line">
+                            <div class="tag">
+                                NAME
+                            </div>
+                            <div class="data">
+                                <%= user.first_name + ' ' + user.last_name %>
+                            </div>
+                            <div class="arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <hr>
+                <div class="block">
+                    <a href="#" id="clickable">
+                        <div class="line">
+                            <div class="tag">
+                                PASSWORD
+                            </div>
+                            <div class="data">
+                                ********
+                            </div>
+                            <div class="arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <hr>
+                <div class="block">
+                    <a href="#" id="clickable">
+                        <div class="line">
+                            <div class="tag">
+                                EMAIL
+                            </div>
+                            <div class="data">
+                                <%= user.email %>
+                            </div>
+                            <div class="arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <hr>
+                <div class="block">
+                    <a href="#" id="clickable">
+                        <div class="line">
+                            <div class="tag">
+                                COUNTRY
+                            </div>
+                            <div class="data">
+                                <%= user.country %>
+                            </div>
+                            <div class="arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <% } %>
+        <!--footer-->
+        <% include partials/footer %>
+    </div>
+
+
+    <!--DON'T TOUCH!!! jquery, bootstrap,script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <!--DON'T TOUCH!!! jquery, bootstrap,script-->
+
+    <!--myJavaScript-->
+    <!--nav-->
+    <script src="../js/navNoEffect.js"></script>
+    <!--myjs-->
+    <!--myJavaScript-->
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+let county_api = {
+    '63': 'https://weather.yfxie.com/api?region=taipei_city&_=1563360409084',
+    '65': 'https://weather.yfxie.com/api?region=new_taipei_city&_=1563360484193',
+    '66': 'https://weather.yfxie.com/api?region=taichung_city&_=1563360499249',
+    '67': 'https://weather.yfxie.com/api?region=tainan_city&_=1563360514605',
+    '64': 'https://weather.yfxie.com/api?region=kaohsiung_city&_=1563360529097',
+    '10017': 'https://weather.yfxie.com/api?region=keelung_city&_=1563360539299',
+    '68': 'https://weather.yfxie.com/api?region=taoyuan_country&_=1563360549011',
+    '10018': 'https://weather.yfxie.com/api?region=hsinchu_city&_=1563360558362',
+    '10004': 'https://weather.yfxie.com/api?region=hsinchu_country&_=1563360569913',
+    '10005': 'https://weather.yfxie.com/api?region=miaoli_country&_=1563360579594',
+    '10007': 'https://weather.yfxie.com/api?region=changhua_country&_=1563360597264',
+    '10008': 'https ://weather.yfxie.com/api?region=nantou_country&_=1563360619194',
+    '10009': 'https://weather.yfxie.com/api?region=yunlin_country&_=1563360630692',
+    '10020': 'https://weather.yfxie.com/api?region=chiayi_city&_=1563360644058',
+    '10010': 'https://weather.yfxie.com/api?region=chiayi_country&_=1563360653966',
+    '10013': 'https://weather.yfxie.com/api?region=pingtung_country&_=1563360664999',
+    '10002': 'https://weather.yfxie.com/api?region=yilan_country&_=1563360678102',
+    '10015': 'https://weather.yfxie.com/api?region=hualien_country&_=1563360690317',
+    '10014': 'https://weather.yfxie.com/api?region=taitung_country&_=1563360702143',
+    '10016': 'https://weather.yfxie.com/api?region=penghu_country&_=1563360715151',
+    '09020': 'https://weather.yfxie.com/api?region=kinmen_country&_=1563360725841',
+    '09007': 'https://weather.yfxie.com/api?region=lienchiang_country&_=1563360736157',
+}
+
+// module.exports = county_api;

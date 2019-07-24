@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        .front,
+        .back {
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transition: transform .6s linear;
+            position: absolute;
+        }
+
+        .front {
+            transform: perspective(600px) rotateY(0deg);
+        }
+
+        .back {
+            background: #f1f1f1;
+            transform: perspective(600px) rotateY(180deg);
+        }
+
+
+        img {
+           height: 100%;
+           width: 100%;
+        }
+
+        .container:hover>.front {
+            transform: perspective(600px) rotateY(-180deg);
+        }
+
+        .container:hover>.back {
+            transform: perspective(600px) rotateY(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="front">
+                <img src="3dhoverffect/004.jpg">
+            </div>
+            <div class="back">
+                123
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

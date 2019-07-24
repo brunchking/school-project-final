@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    /*background-color: #73deff;
+    background-image: url("../photo/cartographer.png");
+    */
+    background-image: url("../photo/ocean.jpg");
+}
+
+.foot {
+    background-color: black;
+    background-image: url("../photo/45-degree-fabric-light.png");
+    color: #d5d5d5;
+    padding-top: 1rem;
+    height: 10vh;
+}
+
+#map {
+    height: 80vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.TaiwanMap {
+    height: 1000px;
+}

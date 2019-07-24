@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amiko", sans-serif;
+  color: white;
+}
+
+body {
+  background-image: url("../photo/bg2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  animation: test 7s;
+}
+
+.front {
+  background-image: url("black-linen.png");
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.cols {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  cursor: pointer;
+  width: 14.2857%;
+  height: 25%;
+}
+
+.container {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.front, .back {
+  background-size: cover;
+  background-position: center;
+  transition: 0.7s;
+  text-align: center;
+  height: 25vh;
+  color: #fff;
+  font-size: 1rem;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-image: url("../photo/45-degree-fabric-light.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  backface-visibility: hidden;
+}
+
+/**/
+
+/*after*/
+
+/**/
+
+.front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  backface-visibility: hidden;
+}
+
+/**/
+
+/*after*/
+
+/**/
+
+.container:hover .front, .container:hover .back {
+  transition: 0.5s;
+}
+
+.inner {
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.container .back {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.container .front {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.container:hover .back {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.container:hover .front {
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+
+p {
+  font-size: 90px;
+  text-decoration: underline;
+}
+
+.logo {
+  height: 25vh;
+  width: 14.2857vw;
+}
+
+
+.image {
+  height: 25vh;
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 25vh;
+}
+
+@media (max-width: 575.98px) {
+  .col {
+    cursor: pointer;
+    width: 25vw;
+    height: 14vh;
+  }
+  .front, .back {
+    background-size: cover;
+    background-position: center;
+    transition: 0.7s;
+    text-align: center;
+    height: 14vh;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .logo {
+    height: 14vh;
+    width: 25vw;
+  }
+  img {
+    background-color: white;
+    width: 100%;
+    height: 14vh;
+    background-size: cover;
+    background-position: center;
+  }
+  p {
+    text-decoration: underline;
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .col {
+    cursor: pointer;
+    width: 25vw;
+    height: 14vh;
+  }
+  .front, .back {
+    background-size: cover;
+    background-position: center;
+    transition: 0.7s;
+    text-align: center;
+    height: 14vh;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .logo {
+    height: 14vh;
+    width: 25vw;
+  }
+  img {
+    background-color: white;
+    width: 100%;
+    height: 14vh;
+    background-size: cover;
+    background-position: center;
+  }
+  p {
+    text-decoration: underline;
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200.98px) {
+  .col {
+    cursor: pointer;
+    width: 25vw;
+    height: 14vh;
+  }
+  .front, .back {
+    background-size: cover;
+    background-position: center;
+    transition: 0.7s;
+    text-align: center;
+    height: 14vh;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .logo {
+    height: 14vh;
+    width: 25vw;
+  }
+  img {
+    background-color: white;
+    width: 100%;
+    height: 14vh;
+    background-size: cover;
+    background-position: center;
+  }
+  p {
+    text-decoration: underline;
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .col {
+    cursor: pointer;
+    width: 25vw;
+    height: 14vh;
+  }
+  .front, .back {
+    background-size: cover;
+    background-position: center;
+    transition: 0.7s;
+    text-align: center;
+    height: 14vh;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .logo {
+    height: 14vh;
+    width: 25vw;
+  }
+  img {
+    background-color: white;
+    width: 100%;
+    height: 14vh;
+    background-size: cover;
+    background-position: center;
+  }
+}

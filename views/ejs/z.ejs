@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TaipeiZoo</title>
+
+    <!--bootstrap css CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--animate.css cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!--hover.css cdn-->
+    <link href="../../css/hover.css/hover-min.css" rel="stylesheet" media="all">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!--googleFont-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko:700" rel="stylesheet">
+
+    <!--DON'T TOUCH!!! jquery, bootstrap,script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <!--DON'T TOUCH!!! jquery, bootstrap,script-->
+
+    <!--left side nav-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <!--MY CSS-->
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/paragraphTemplate.css">
+    <link rel="stylesheet" href="css/socialMediaSideBar.css">
+
+</head>
+<style>
+</style>
+
+<body>
+    <!--animated nav-->
+    <%- include('partials/nav.ejs') %>
+
+    <div class="container">
+        <div class="card-group">
+            <div class="card">
+                <img src="../../photo/z.jpg" class="card-img-top img-fluid min-width:" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Taipei Zoo</h5>
+                    <p class="card-text">
+                        ❀景點介紹<br>
+                        台北動物園是目前亞洲最大的動物園。<br>平假日舉行各式講座及解說活動，園區中也針對動物設計可愛的商品供遊客選購，是相當適合假日全家出遊的好去處。
+                    </p>
+                    <p class="card-text">
+                        ❀交通方式<br>
+                        請搭乘文湖線，在動物園站下車
+                        請搭乘板南線，在市政府站下車，再轉搭綠1或棕18、棕21及282副線公車
+
+                    </p>
+                    <p class="card-text"><small class="text-muted">
+                            Reference website:<br>
+                            <a
+                                href="https://blog.kkday.com/36623/asia-taiwan-alishan-cherryblossom-hotelscombined">https://blog.kkday.com/36623/asia-taiwan-alishan-cherryblossom-hotelscombined</a></small>
+                    </p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.0520609976697!2d121.57884711500549!3d24.998346883989086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa604a32818f%3A0xaafe06fd09b4d766!2z6Ie65YyX5biC56uL5YuV54mp5ZyS!5e0!3m2!1szh-TW!2stw!4v1558888840342!5m2!1szh-TW!2stw"
+                    height="600px" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!--social sidebar-->
+    <% include('/partials/social-sidebar') %>
+
+    <!--footer-->
+    <% include('/partials/footer') %>
+
+    <!--myJavaScript-->
+    <!--nav-->
+    <script src="../../js/navNoEffect.js"></script>
+    </script>
+</body>
+
+</html>

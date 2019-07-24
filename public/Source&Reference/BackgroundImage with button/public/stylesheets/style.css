@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top-Box {
+    height: 10vh;
+    width: 100%;
+    border: red 10px solid;
+}
+
+.doge {
+    width: 100%;
+}
+
+.middle-box {
+    position: relative;
+    border: 10px solid black;
+}
+
+.box1 {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    height: 20%;
+    text-align: right;
+    font-size: 2vw;
+}
+
+.box2 {
+    position: absolute;
+    top: 45%;
+    height: 20%;
+    right: 20%;
+    font-size: 2vw;
+}
+
+.btnLeft {
+    border: 2px solid white;
+}
+
+.btnRight {
+    border: 2px solid white;
+}

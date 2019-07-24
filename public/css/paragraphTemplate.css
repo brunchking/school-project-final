@@ -1,0 +1,17 @@
+body {
+    background: url("../photo/wallhaven-343454.jpg");
+    background-position: cover;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer p {
+    font-size: 3vh;
+}
+
+footer {
+    padding-top: 2rem;
+}

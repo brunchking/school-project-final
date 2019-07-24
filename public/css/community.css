@@ -1,0 +1,31 @@
+body, html {
+    overflow-x: hidden;
+}
+
+.community {
+    border: 2px solid black;
+    height: 800px;
+    width: 100%;
+    background-color: white;
+
+}
+
+.upload-pic {
+    text-align: center;
+    height: 800px;
+    padding-top: 100px;
+}
+
+.display-pic {
+    margin: auto;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.pillar {
+    height: 800px;
+    padding-top: 100px;
+    width: 100%;
+}

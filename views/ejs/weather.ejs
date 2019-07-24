@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- -animate.css cdn
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
+
+    <!--hover.css cdn-->
+    <link href="css/hover.css/hover-min.css" rel="stylesheet" media="all">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!--googleFont-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko:700" rel="stylesheet">
+
+    <!--DON'T TOUCH!!! jquery, bootstrap,script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <!--DON'T TOUCH!!! jquery, bootstrap,script-->
+
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/dist/wu-icons-style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <video autoplay="autoplay" muted="muted" loop="loop">
+        <source src="./photo/Sunset-Couple.mp4" type="video/mp4">
+    </video>
+    <%- include('partials/nav') %>
+    <header>
+        <div class="overlay"></div>
+
+
+        <!--animated nav-->
+
+
+        <!-- Weather-->
+        <div class="container">
+            <!-- Row 1-->
+
+            <div class="row">
+                <!-- Box1-->
+                <div class="col-sm-12 col-lg-6 align-self-center Box01">
+                    <div class="drop-down">
+                        <select class="form-control city-select" name="city" id="city_form">
+                        </select>
+                    </div>
+                    <div class="box1-title">
+                        <h1 class="display-4 city-name">臺北市</h1>
+                    </div>
+                    <div class="box1-temp">
+                        <h1 class="display-1 temp-num">39.9&deg</h1>
+                    </div>
+                    <div class="box1-temp-detail">
+                        <div class="weather-icon">
+                            <i class="wu wu-white wu-64 wu-chancerain"></i>
+                        </div>
+                        <div class="box-temp-text">
+                            <h1 class="situation">多雲時晴</h1>
+                            <h4>0&deg~10&deg</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box1-->
+
+                <!-- Box2-->
+                <div class="col-sm-12 col-lg-6 table-1 align-self-center Box02">
+                    <div class="box2">
+                        <h3>今明預報</h3>
+                        <table class="table text-white">
+                            <thead>
+                                <tr>
+                                    <th class="city-name" scope="col">臺北市</th>
+                                    <th scope="col">溫度</th>
+                                    <th scope="col">天氣狀況</th>
+                                    <th scope="col">舒適度</th>
+                                    <th scope="col">降雨機率</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">今晚至明晨 18:00 - 06:00</th>
+                                    <td class="two-days-temp">Mark</td>
+                                    <td class="condition">Otto</td>
+                                    <td class='comfort'>@mdo</td>
+                                    <td class='rainChance'>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">明日白天 06:00 - 18:00</th>
+                                    <td class="two-days-temp">Jacob</td>
+                                    <td class="condition">Thornton</td>
+                                    <td class='comfort'>@fat</td>
+                                    <td class='rainChance'>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">明日晚上 18:00 - 06:00</th>
+                                    <td class="two-days-temp">Larry</td>
+                                    <td class="condition">the Bird</td>
+                                    <td class='comfort'>@twitter</td>
+                                    <td class='rainChance'>@mdo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Box2-->
+            </div>
+
+            <!-- Row 2-->
+            <div class="row Row2">
+                <!-- Box3-->
+                <div class="col-sm-12 col-lg-5 Box03">
+                    <img src="" alt="">
+                    <div class="box3">
+                        <p class="detail-title">title</p>
+                        <p class="detail-body_01"></p>
+                        <p class="detail-body_02"></p>
+                        <p class="detail-body_03"></p>
+                        <p class="detail-body_04"></p>
+                        <p class="detail-body_05"></p>
+                        <p class="detail-body_06"></p>
+                        <p class="detail-body_07"></p>
+                        <p class="detail-body_08"></p>
+                        <p class="detail-body_09"></p>
+                        <div class="detail-update"></div>
+                    </div>
+                </div>
+                <!-- Box3-->
+
+                <!-- Box4-->
+                <!-- Empty col use to fill the gap-->
+                <div class="col-lg-1"></div>
+                <!-- Empty col use to fill the gap-->
+                <div class="col-sm-12 col-lg-6 table-2 Box04">
+                    <div class="box4">
+                        <h3>一週預報</h3>
+                        <table class="table text-white">
+                            <thead>
+                                <tr>
+                                    <th class="city-name" scope="col">臺北市</th>
+                                    <th class="day" scope="col">07/16</th>
+                                    <th class="day" scope="col">07/16</th>
+                                    <th class="day" scope="col">07/16</th>
+                                    <th class="day" scope="col">07/16</th>
+                                    <th class="day" scope="col">07/16</th>
+                                    <th class="day" scope="col">07/16</th>
+                                    <th class="day" scope="col">07/16</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">白天</th>
+                                    <td class="morning">Mark</td>
+                                    <td class="morning">Otto</td>
+                                    <td class="morning">@mdo</td>
+                                    <td class="morning">@mdo</td>
+                                    <td class="morning">@mdo</td>
+                                    <td class="morning">@mdo</td>
+                                    <td class="morning">@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">晚上</th>
+                                    <td class="night">Mark</td>
+                                    <td class="night">Otto</td>
+                                    <td class="night">@mdo</td>
+                                    <td class="night">@mdo</td>
+                                    <td class="night">@mdo</td>
+                                    <td class="night">@mdo</td>
+                                    <td class="night">@mdo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Box4-->
+            </div>
+            <!-- Row 2-->
+        </div>
+    </header>
+
+
+    <!-- weather data from government-->
+    <script src="js/weather/Info_County.js"></script>
+    <script src="js/weather/W50_Data.js"></script>
+    <script src="js/weather/weather.js"></script>
+    <script src="js/weather/current_weather/current_weather.js"></script>
+    <!-- nav-->
+    <script src="js/navNoEffect.js"></script>
+    <!-- Render temp-title, temp-text-->
+    <script>
+        const temp = document.querySelector('.box1-temp h1');
+        const temp_title = document.querySelectorAll('.city-name');
+        const temp_range = document.querySelector('.box-temp-text h4');
+        const temp_detail_title = document.querySelector('.box3 .detail-title');
+        const temp_detail_update = document.querySelector('.box3 .detail-update');
+        const twoDaysTemp = document.querySelectorAll(".two-days-temp");
+        const comfort = document.querySelectorAll(".comfort")
+        const rainChance = document.querySelectorAll(".rainChance")
+        const condition = document.querySelectorAll(".condition")
+        const morning = document.querySelectorAll(".morning")
+        const night = document.querySelectorAll(".night");
+        const day = document.querySelectorAll(".day");
+        const situation = document.querySelector(".situation");
+        let weatherData = <%- JSON.stringify(weatherData) %>;
+        let dt = new Date();
+        let nowHour = dt.getHours();
+
+        // Check time
+        nowHour = (nowHour >= 18) ? 'night' : 'morning';
+        // Default Taipei temperature
+        fetch(county_api[`${city_form.value}`])
+            .then(response => {
+                return response.json();
+            })
+            .then(json => {
+                temp.innerHTML = json.currentTemperature + '&degC';
+                situation.innerHTML = json.week[0][nowHour].situation;
+                for (let j = 0; j < 3; j++) {
+                    let array = [], str;
+                    array = json.todayAndTomorrow[j].temperature.split('~');
+                    str = `${array[0]}&deg~${array[1]}&deg`
+
+                    // Two-days table
+                    twoDaysTemp[j].innerHTML = str;
+                    comfort[j].innerHTML = json.todayAndTomorrow[j].desc;
+                    rainChance[j].innerHTML = json.todayAndTomorrow[j].rain;
+                    condition[j].innerHTML = json.todayAndTomorrow[j].situation;
+                }
+                // Weekly table 
+                for (let j = 0; j < 7; j++) {
+                    let array = [], array2 = [], str = '', str2 = '';
+                    array = json.week[j].morning.temperature.split('~');
+                    array2 = json.week[j].night.temperature.split('~');
+                    str = `${array[0]}&deg~${array[1]}&deg`;
+                    str2 = `${array2[0]}&deg~${array2[1]}&deg`;
+                    morning[j].innerHTML = str;
+                    night[j].innerHTML = str2;
+
+                    array = [], str = '';
+                    array = json.week[j].day.split('星');
+                    str = array[0];
+                    day[j].innerHTML = str;
+                }
+            })
+            .catch(err => console.log(error));
+
+
+        // Drop-down listener 1
+        city_form.addEventListener('change', (event) => {
+            fetch(county_api[`${city_form.value}`])
+                .then(response => {
+                    return response.json();
+                })
+                .then(json => {
+                    temp.innerHTML = json.currentTemperature + '&degC';
+                    situation.innerHTML = json.week[0][nowHour].situation;
+                    for (let j = 0; j < 3; j++) {
+                        let array = [], str;
+                        array = [], str = '';
+                        array = json.todayAndTomorrow[j].temperature.split('~');
+                        str = `${array[0]}&deg~${array[1]}&deg`;
+
+                        // Two-days table
+                        twoDaysTemp[j].innerHTML = str;
+                        comfort[j].innerHTML = json.todayAndTomorrow[j].desc;
+                        rainChance[j].innerHTML = json.todayAndTomorrow[j].rain;
+                        condition[j].innerHTML = json.todayAndTomorrow[j].situation;
+                    }
+
+                    // Weekly table 
+                    for (let j = 0; j < 7; j++) {
+                        let array = [], array2 = [], str = '', str2 = '';
+                        array = json.week[j].morning.temperature.split('~');
+                        array2 = json.week[j].night.temperature.split('~');
+                        str = `${array[0]}&deg~${array[1]}&deg`;
+                        str2 = `${array2[0]}&deg~${array2[1]}&deg`;
+                        morning[j].innerHTML = str;
+                        night[j].innerHTML = str2;
+
+                        array = [], str = '';
+                        array = json.week[j].day.split('星');
+                        str = array[0];
+                        day[j].innerHTML = str;
+                    }
+                })
+                .catch(err => console.log(error));
+
+            // Drop-down listener 2
+            for (let i = 0; i < 21; i++) {
+                if (city_form.value === cityNum[i].ID) {
+                    for (let j = 0; j < 3; j++) {
+                        temp_title[j].innerHTML = weatherData[i].city;
+                    }
+                    temp_range.innerHTML = `${weatherData[i].M_lowest}&deg~${weatherData[i].M_highest}&deg`
+                    for (let j = 1; j <= 8; j++) {
+                        let str = '.detail-body_0';
+                        str += j;
+                        const temp_detail_body = document.querySelector(`.box3 ${str}`);
+
+                        if (W50_County[city_form.value].Content[j] === undefined) {
+                            temp_detail_body.innerHTML = ' ';
+                        }
+                        else {
+                            // console.log(temp_detail_body);
+                            temp_detail_body.innerHTML = `${W50_County[city_form.value].Content[j]}`
+                        }
+                    }
+                }
+            }
+            temp_detail_update.innerHTML = `更新時間: ${W50_County[city_form.value].DataTime}`
+            temp_detail_title.innerHTML = `${W50_County[city_form.value].Title}`;
+        });
+
+        // Temp-detail-title
+        temp_detail_title.innerHTML = `${W50_County[city_form.value].Title}`;
+
+        // Default Taipei && Highest temperature , lowest temperature and update time
+        for (let i = 0; i < 3; i++) {
+            temp_title[i].innerHTML = `${weatherData[6].city}`
+        }
+        temp_range.innerHTML = `${weatherData[6].M_lowest}&deg~${weatherData[6].M_highest}&deg`;
+        temp_detail_update.innerHTML = `更新時間: ${W50_County[city_form.value].DataTime}`
+
+        // Taipei default detail_body 
+        for (let i = 1; i <= 2; i++) {
+            let str = '.detail-body_0';
+            str += i;
+            const temp_detail_body = document.querySelector(`.box3 ${str}`);
+            // console.log(temp_detail_body);
+            temp_detail_body.innerHTML = `${W50_County[city_form.value].Content[i]}`
+        }
+    </script>
+</body>
+
+</html>
