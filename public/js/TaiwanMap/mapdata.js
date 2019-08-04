@@ -1,7 +1,7 @@
 var simplemaps_countrymap_mapdata = {
   main_settings: {
     //General settings
-    width: "800", //'700' or 'responsive'
+    width: "800", //"700" or "responsive"
     background_color: "#FFFFFF",
     background_transparent: "yes",
     border_color: "#ffffff",
@@ -60,7 +60,7 @@ var simplemaps_countrymap_mapdata = {
     //Advanced settings
     div: "map",
     auto_load: "yes",
-    url_new_tab: "no",
+    url_new_tab: "yes",
     images_directory: "default",
     fade_time: 0.1,
     link_text: "View Website",
@@ -72,74 +72,93 @@ var simplemaps_countrymap_mapdata = {
   state_specific: {
     TWN1156: {
       name: "Kaohsiung City",
-      url: "https://www.google.com/"
+      url: "i"
     },
     TWN1158: {
       name: "Pingtung",
       url: "https://www.pthg.gov.tw/en"
     },
     TWN1160: {
-      name: "Tainan City"
+      name: "Tainan City",
+      url: "/q"
     },
     TWN1161: {
-      name: "Hsinchu City"
+      name: "Hsinchu City",
+      url: "https://www.taiwan.net.tw/m1.aspx?sNo=0001109"
     },
     TWN1162: {
-      name: "Hsinchu"
+      name: "Hsinchu",
+      url: "https://www.taiwan.net.tw/m1.aspx?sno=0001108&key="
     },
     TWN1163: {
-      name: "Yilan"
+      name: "Yilan",
+      url: "https://travel.yilan.tw/"
     },
     TWN1164: {
       name: "Keelung City",
-      url: "https://www.klcg.gov.tw/en/Default/Index"
+      url: "https://www.klcg.gov.tw/en/Default/Index",
+      url: "/k"
     },
     TWN1165: {
-      name: "Miaoli"
+      name: "Miaoli",
+      url: "https://www.mlc.gov.tw/"
     },
     TWN1166: {
       name: "Taipei City",
-      url: "https://english.gov.taipei/Default.aspx"
+      url: "/t"
     },
     TWN1167: {
       name: "New Taipei City",
-      url: "https://foreigner.ntpc.gov.tw/"
+      url: "/j"
     },
     TWN1168: {
-      name: "Taoyuan"
+      name: "Taoyuan",
+      url: "https://www.taiwan.net.tw/m1.aspx?sNo=0001107"
     },
     TWN1169: {
-      name: "Changhua"
+      name: "Changhua",
+      url: "https://www.taiwan.net.tw/m1.aspx?sNo=0001113"
     },
     TWN1170: {
-      name: "Chiayi"
+      name: "Chiayi", 
+      url: "/a"
+  
     },
     TWN1171: {
-      name: "Chiayi City"
+      name: "Chiayi City",
+      url: "https://travel.chiayi.gov.tw/travel-themes"
     },
     TWN1172: {
-      name: "Hualien"
+      name: "Hualien",
+      url: "http://tour-hualien.hl.gov.tw/"
     },
     TWN1173: {
-      name: "Nantou"
+      name: "Nantou",
+      url: "/f"
     },
     TWN1174: {
-      name: "Taichung City"
+      name: "Taichung City",
+      url: "/g"
     },
     TWN1176: {
-      name: "Yunlin"
+      name: "Yunlin",
+      url: "https://tour.yunlin.gov.tw/"
     },
     TWN1177: {
-      name: "Taitung"
+      name: "Taitung",
+      url: "https://tour.taitung.gov.tw/zh-tw"
     },
     TWN3414: {
-      name: "Penghu"
+      name: "Penghu",
+      url: "https://www.penghu-nsa.gov.tw/"
     },
     TWN3415: {
-      name: "Kinmen"
+      name: "Kinmen",
+      url: "https://kinmen.travel/"
     },
     TWN5128: {
-      name: "Lienchiang"
+      name: "Lienchiang",
+      url: "https://www.taiwan.net.tw/m1.aspx?sNo=0001127"
     }
   },
   locations: {},

@@ -1,4 +1,4 @@
-async function weatherInfo(json, city) {
+function weatherInfo(json, city) {
     let weather = {};
     let M_highest = 0, M_lowest = 99, N_highest = 0, N_lowest = 99;
     let M_minT, M_maxT, N_minT, N_maxT, i = 0, index = 0;
@@ -11,14 +11,14 @@ async function weatherInfo(json, city) {
             // console.log('--------------');
             // for (let j = 0;  < 3; j++) {
             // M_min Temperature
-            M_minT = json.records.location[i].weatherElement[0].time[0].parameter.parameterName
+            M_minT = json.records.location[i].weatherElement[0].time[0].parameter.parameterName;
             if (M_minT < M_lowest) {
                 M_lowest = M_minT;
             }
             //console.log('M_minT:', M_minT);
 
             // M_max Temperature
-            M_maxT = json.records.location[i].weatherElement[1].time[0].parameter.parameterName
+            M_maxT = json.records.location[i].weatherElement[1].time[0].parameter.parameterName;
             if (M_maxT > M_highest) {
                 M_highest = M_maxT;
             }

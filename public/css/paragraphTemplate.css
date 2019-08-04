@@ -1,6 +1,8 @@
 body {
     background: url("../photo/wallhaven-343454.jpg");
-    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 1980px 1080px;
+    background-attachment: fixed;
 }
 
 img {

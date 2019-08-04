@@ -17,17 +17,23 @@ function grayScaleOn() {
 
 const btn2 = document.querySelector('.ghost-button-border-color-right');
 
-btn2.addEventListener('mouseenter', invertOff);
+// btn2.addEventListener('mouseenter', invertOff);
 
-function invertOff() {
-    const bg = document.querySelector('.sky');
-    bg.style.filter = 'invert(1)';
-    bg.style.transition = 'filter 1s';
-}
+// function invertOff() {
+//     const bg = document.querySelector('.sky');
+//     bg.style.filter = 'invert(1)';
+//     bg.style.transition = 'filter 1s';
+// }
 
-btn.addEventListener('mouseleave', invertOn);
+btn2.addEventListener('mouseenter', grayScaleOff);
+btn2.addEventListener('mouseleave', grayScaleOn);
 
-function invertOn() {
-    const bg = document.querySelector('.sky');
-    bg.style.filter = 'invert(0)';
-}
+// btn.addEventListener('mouseleave', invertOn);
+
+// function invertOn() {
+//     const bg = document.querySelector('.sky');
+//     bg.style.filter = 'invert(0)';
+// }
+
+
+

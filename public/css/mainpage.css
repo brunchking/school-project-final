@@ -27,12 +27,14 @@ body {
 .cols {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .col {
   cursor: pointer;
   width: 14.2857%;
   height: 25%;
+  opacity: 0.85;
 }
 
 .container {

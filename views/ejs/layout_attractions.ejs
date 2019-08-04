@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <!--bootstrap css CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--animate.css cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!--hover.css cdn-->
+    <link href="../../css/hover.css/hover-min.css" rel="stylesheet" media="all">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!--googleFont-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko:700" rel="stylesheet">
+
+    <!--DON'T TOUCH!!! jquery, bootstrap,script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <!--DON'T TOUCH!!! jquery, bootstrap,script-->
+
+    <!--left side nav-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <!--MY CSS-->
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/paragraphTemplate.css">
+    <link rel="stylesheet" href="css/socialMediaSideBar.css">
+
+</head>
+<style>
+</style>
+
+<body>
+    <!--animated nav-->
+    <%- include('partials/nav.ejs') %>
+
+    <div class="container">
+        <div class="card-group">
+            <% switch (char) {
+                case 'b': %>
+                    <%- include('partials/attractions_parallax/b.ejs') %>
+                    <% break;
+                case 'c': %>
+                    <%- include('partials/attractions_content/c.ejs') %>
+                    <% break;
+                case 'd': %>
+                    <%- include('partials/attractions_content/d.ejs') %>
+                    <% break;  
+                case 'e': %>
+                    <%- include('partials/attractions_content/e.ejs') %>
+                    <% break;   
+                case 'f': %>
+                    <%- include('partials/attractions_content/f.ejs') %>
+                    <% break;   
+                case 'g': %>
+                    <%- include('partials/attractions_content/g.ejs') %>
+                    <% break;   
+                case 'h': %>
+                    <%- include('partials/attractions_content/h.ejs') %>
+                    <% break;   
+                case 'i': %>
+                    <%- include('partials/attractions_content/i.ejs') %>
+                    <% break;      
+                case 'j': %>
+                    <%- include('partials/attractions_content/j.ejs') %>
+                    <% break;   
+                case 'k': %>
+                    <%- include('partials/attractions_content/k.ejs') %>
+                    <% break;   
+                case 'l': %>
+                    <%- include('partials/attractions_content/l.ejs') %>
+                    <% break;   
+                case 'm': %>
+                    <%- include('partials/attractions_content/m.ejs') %>
+                    <% break;   
+                case 'n': %>
+                    <%- include('partials/attractions_content/n.ejs') %>
+                    <% break;   
+                case 'o': %>
+                    <%- include('partials/attractions_content/o.ejs') %>
+                    <% break;   
+                case 'p': %>
+                    <%- include('partials/attractions_content/p.ejs') %>
+                    <% break;   
+                case 'q': %>
+                    <%- include('partials/attractions_content/q.ejs') %>
+                    <% break;   
+                case 'r': %>
+                    <%- include('partials/attractions_content/r.ejs') %>
+                    <% break;   
+                case 's': %>
+                    <%- include('partials/attractions_content/s.ejs') %>
+                    <% break;   
+                case 't': %>
+                    <%- include('partials/attractions_content/t.ejs') %>
+                    <% break;   
+                case 'u': %>
+                    <%- include('partials/attractions_content/u.ejs') %>
+                    <% break;   
+                case 'v': %>
+                    <%- include('partials/attractions_content/v.ejs') %>
+                    <% break;                          
+                case 'w': %>
+                    <%- include('partials/attractions_content/w.ejs') %>
+                    <% break;   
+                case 'x': %>
+                    <%- include('partials/attractions_content/x.ejs') %>
+                    <% break;   
+                case 'y': %>
+                    <%- include('partials/attractions_content/y.ejs') %>
+                    <% break;   
+                case 'z': %>
+                    <%- include('partials/attractions_content/z.ejs') %>
+                    <% break;                                  
+            } %>
+        </div>
+    </div>
+    
+    <!--social sidebar-->
+    <% include partials/social-sidebar %>
+
+    <!--footer-->
+    <% include partials/footer %>
+
+    <!--myJavaScript-->
+    <!--nav-->
+    <script src="../../js/navNoEffect.js"></script>
+    </script>
+</body>
+
+</html>

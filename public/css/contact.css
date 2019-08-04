@@ -21,7 +21,7 @@ body {
 
 .con {
   padding-top: 5vh;
-  color: black;
+  color: rgba(0, 0, 0, 0.815);
   font-size: 5vh;
 }
 
@@ -133,9 +133,9 @@ body {
   }
 }
 
-p {
+/* p {
   font-size: 3vh;
-}
+} */
 
 @media (max-width: 575.98px) {
   .btn1 {
