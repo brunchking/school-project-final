@@ -53,63 +53,65 @@
         <!--animated nav-->
         <%- include('partials/nav') %>
 
-        <!--content-->
-        <div class="container-fluid content animated bounceInDown">
-            <div class="row text-center">
-                <div class="col-12 col">
-                    <h1 class="con">Contact us now!</h1>
+        <div class="section">
+            <!--content-->
+            <div class="container-fluid content animated bounceInDown">
+                <div class="row text-center">
+                    <div class="col-12 col">
+                        <h1 class="con">Contact us now!</h1>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!--form-->
-        <div class="container form-1 animated bounceInDown">
-            <form action="https://formspree.io/francis545@yahoo.com.tw" method="POST">
-                <div class="form-row justify-content-center">
-                    <div class="form-group col-md-4">
-                        <label>NAME</label>
-                        <input type="text" class="form-control" placeholder="Name" name="name">
+            <!--form-->
+            <div class="container form-1 animated bounceInDown">
+                <form action="https://formspree.io/francis545@yahoo.com.tw" method="POST">
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-4">
+                            <label>NAME</label>
+                            <input type="text" class="form-control" placeholder="Name" name="name">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputEmail4">EMAIL</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+                        </div>
                     </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputEmail4">EMAIL</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email" >
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-8">
+                            <label for="exampleFormControlTextarea1">MESSAGE</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Message" name="message"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row justify-content-center">
-                    <div class="form-group col-md-8">
-                        <label for="exampleFormControlTextarea1">MESSAGE</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Message" name="message"></textarea>
+                    <div class="form-row justify-content-center">
+                        <button type="submit" class="btn btn-dark">Send</button>
                     </div>
-                </div>
-                <div class="form-row justify-content-center">
-                    <button type="submit" class="btn btn-dark">Send</button>
-                </div>
-            </form>
-        </div>
-        <!--social media-->
+                </form>
+            </div>
+            <!--social media-->
 
-        <div class="text-center middle">
-            <a class="btn1 bg-light" href="https://www.facebook.com/">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a class="btn1 bg-light" href="https://www.twitter.com/">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a class="btn1 bg-light" href="https://www.instagram.com/">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a class="btn1 bg-light" href="https://www.youtube.com/">
-                <i class="fab fa-youtube"></i>
-            </a>
+            <div class="text-center middle">
+                <a class="btn1 bg-light" href="https://www.facebook.com/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn1 bg-light" href="https://www.twitter.com/">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn1 bg-light" href="https://www.instagram.com/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn1 bg-light" href="https://www.youtube.com/">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
         </div>
 
         <!--footer-->
         <% include partials/footer %>
-    </div>
+        </>
 
-    <!--myJavaScript-->
-    <script src="../js/navNoEffect.js"></script>
+        <!--myJavaScript-->
+        <script src="../js/navNoEffect.js"></script>
 </body>
 
 </html>

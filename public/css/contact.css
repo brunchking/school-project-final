@@ -14,6 +14,10 @@ body {
   margin-bottom: 5vh;
 }
 
+.section {
+  margin-top: auto;
+}
+
 .form-1 {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -21,8 +25,13 @@ body {
 
 .con {
   padding-top: 5vh;
-  color: rgba(0, 0, 0, 0.815);
+  /* color: rgba(0, 0, 0, 0.815); */
+  color: #0E0301;
   font-size: 5vh;
+}
+
+form {
+  color: #0E0301;;
 }
 
 /*
@@ -157,4 +166,3 @@ body {
     transition: 0.2s linear;
   }
 }
-
