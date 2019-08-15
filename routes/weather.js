@@ -26,22 +26,24 @@ router.get('/', async (req, res, next) => {
         isLogin = true;
     }
 
-    
 
-    fetch(url1).then(response => response.text()).then(data => {
-        fs.writeFileSync(__dirname + "./../public/js/weather/current_weather/Observe_Home.js", data)
-    }).then(() => {
-        fetch(url2).then(response => response.text()).then(data => {
-            fs.writeFileSync(__dirname + "./../public/js/weather/W50_Data.js", data);
+    if (first === false) {
+        fetch(url1).then(response => response.text()).then(data => {
+            fs.writeFileSync(__dirname + "./../public/js/weather/current_weather/Observe_Home.js", data)
         }).then(() => {
-            Object.keys(city).forEach(async (data, index) => {
-                weatherData[index] = weatherInfo(json, city[data]);
-                if (index === 21) {
-                    res.render('weather', { layout: false, isLogin: isLogin, weatherData });
-                    // weatherData is an array
-                }
+            fetch(url2).then(response => response.text()).then(data => {
+                fs.writeFileSync(__dirname + "./../public/js/weather/W50_Data.js", data);
             })
         })
+        first = true;
+    }
+
+    Object.keys(city).forEach(async (data, index) => {
+        weatherData[index] = weatherInfo(json, city[data]);
+        if (index === 21) {
+            res.render('weather', { layout: false, isLogin: isLogin, weatherData });
+            // weatherData is an array
+        }
     })
 
 
