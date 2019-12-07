@@ -8,7 +8,7 @@ const passport = require('passport');
 const fs = require('fs');
 
 
-// Router
+// Router       
 const index1Router = require('./routes/index1');
 const aboutusRouter = require('./routes/aboutus');
 const chooseRouter = require('./routes/choose');
@@ -56,6 +56,7 @@ app.use(session({
 // Passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
+
 
 // Connect flash
 app.use(flash());

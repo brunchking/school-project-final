@@ -42,12 +42,22 @@
     <link rel="stylesheet" href="css/paragraphTemplate.css">
     <link rel="stylesheet" href="css/socialMediaSideBar.css">
     <link rel="stylesheet" href="css/parallax.css">
-
+    <link rel="stylesheet" href="css/gotop.css">
+    <link rel="stylesheet" href="css/goleft.css">
+    <link rel="stylesheet" href="css/goright.css">
+    
 </head>
 <style>
 </style>
 
 <body>
+    <!-- Goto left-->
+    <% include partials/goleft %>
+    <!-- Goto right-->
+    <% include partials/goright %>
+    <!-- Goto top-->
+    <% include partials/gotop %>
+
     <!--animated nav-->
     <%- include('partials/nav.ejs') %>
 
@@ -126,9 +136,13 @@
 <!--footer-->
 <% include partials/footer %>
 
+
 <!--myJavaScript-->
 <!--nav-->
 <script src="../../js/navNoEffect.js"></script>
+<script src="../../js/gotop.js"></script>
+<script src="../../js/goleft.js"></script>
+<script src="../../js/goright.js"></script>
 </script>
 </body>
 

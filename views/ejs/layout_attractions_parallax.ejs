@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/paragraphTemplate.css">
     <link rel="stylesheet" href="css/socialMediaSideBar.css">
+    <link rel="stylesheet" href="css/gotop.css">
     
     <% switch (char) {
         case 'b': %>
@@ -124,6 +125,8 @@
 </style>
 
 <body>
+        <!-- Go top button -->
+        <% include partials/gotop %>
     <!--animated nav-->
     <%- include('partials/nav.ejs') %>
 
@@ -212,10 +215,12 @@
     <!--footer-->
     <% include partials/footer %>
 
+
     <!--myJavaScript-->
     <!--nav-->
     <script src="../../js/navNoEffect.js"></script>
-    </script>
+    <script src="../../js/gotop.js"></script>
+
 </body>
 
 </html> 
