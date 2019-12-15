@@ -46,9 +46,35 @@
     <!--CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <style>
-        .head {
+        * {
             font-family: 'Amiko', sans-serif;
+        }
+
+        .head {
             background-color: #E0E2DB;
+        }
+
+        body {
+            /* background-color: #3C91E6; */
+            background-color: #045de9;
+            background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+        }
+
+        h2 {
+            color: black;
+            font-size: 50px;
+        }
+
+        .panel-body {
+            font-size: 25px;
+        }
+
+        .btn {
+            font-size: 30px;
+        }
+        h2 {
+           background-color: white;
+           border: 2px solid black;;
         }
     </style>
 </head>
@@ -69,15 +95,18 @@
         <a class="btn btn-default" href="/login">登入</a>
         <% } %>
         -->
-
+        <h2>Message board <i class="fas fa-comment-dots"></i></h2>
+        <br>
         <% if (isLogin === true) { %>
         <a class="btn btn-primary" href="/community/posts">New post</a>
         <% } %>
         <% if (isLogin === false)  { %>
         <a class="btn btn-primary" href="/users">New post</a>
         <% }%>
-        <h2>Message board</h2>
         <br>
+        <br>
+        <br>
+
         <div>
             <% for(var i=0; i<posts.length; i++) { %>
             <div class="panel panel-default">
@@ -116,6 +145,12 @@
   
     <% } %>
     -->
+    <div class="container">
+        <a class="twitter-timeline" data-height="1000" data-theme="white"
+            href="https://twitter.com/TripToTaiwan?ref_src=twsrc%5Etfw">Tweets by TripToTaiwan</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
     <div class="pillar">
 
     </div>

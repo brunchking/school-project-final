@@ -2,6 +2,9 @@ body, html {
     overflow-x: hidden;
 }
 
+h2 {
+    font-family: 'Amiko', sans-serif;
+}
 .community {
     border: 2px solid black;
     height: 800px;
@@ -37,3 +40,4 @@ body, html {
 .comment {
     padding-top: 7vh;
 }
+

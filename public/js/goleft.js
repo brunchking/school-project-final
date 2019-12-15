@@ -21,28 +21,28 @@ function scrollFunction() {
     }
 }
 
-backToleftButton.addEventListener("click", smoothScrollBackToleft);
+// backToleftButton.addEventListener("click", smoothScrollBackToleft);
 
-// function backToleft() {
-//   window.scrollTo(0, 0);
+// // function backToleft() {
+// //   window.scrollTo(0, 0);
+// // }
+
+// function smoothScrollBackToleft() {
+//     const targetPosition = 0;
+//     const startPosition = window.pageYOffset;
+//     const distance = targetPosition - startPosition;
+//     const duration = 750;
+//     let start = null;
+
+//     window.requestAnimationFrame(step);
+
+//     function step(timestamp) {
+//         if (!start) start = timestamp;
+//         const progress = timestamp - start;
+//         window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+//         if (progress < duration) window.requestAnimationFrame(step);
+//     }
 // }
-
-function smoothScrollBackToleft() {
-    const targetPosition = 0;
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
-    const duration = 750;
-    let start = null;
-
-    window.requestAnimationFrame(step);
-
-    function step(timestamp) {
-        if (!start) start = timestamp;
-        const progress = timestamp - start;
-        window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
-        if (progress < duration) window.requestAnimationFrame(step);
-    }
-}
 
 function easeInOutCubic(t, b, c, d) {
     t /= d / 2;

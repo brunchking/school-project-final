@@ -130,7 +130,7 @@ fs.readdir('public/user-upload', (err, files) => {
         pic_IDs[count] = file;
         ++count;
     });
-    console.log(pic_IDs);
+    
 });
 
 router.get('/', async function (req, res) {
